@@ -1,0 +1,394 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Amiri', serif
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover,
+a:active,
+a:focus {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1);
+    color: pink
+}
+
+section {
+    margin: 20vh auto 5vh
+}
+
+h1 {
+    line-height: 3.5rem;
+    font-size: 50px
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 3.5rem
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 3.5rem
+}
+
+.dark {
+    background-color: #0f0a57;
+    color: white
+}
+
+.light {
+    background-color: white;
+    color: #090635
+}
+
+.flex-aro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90vw
+}
+
+.flex-aro>* {
+    margin: 2rem 0
+}
+
+.flex-bet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90vw
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-bet>* {
+        max-width: 45%
+    }
+}
+
+.left-ali {
+    text-align: left
+}
+
+.cent-ali {
+    text-align: center
+}
+
+.btn {
+    width: auto;
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-size: 28px;
+    outline: none;
+    border: none;
+    font-family: 'Chela One', cursive;
+    margin: 2rem auto
+}
+
+.btn-light {
+    background-color: pink;
+    color: white
+}
+
+.btn-dark {
+    color: white;
+    background-color: #52cdec
+}
+
+.topic1 {
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 3.5rem
+}
+
+.card {
+    max-width: 300px
+}
+
+.card>* {
+    margin: 20px
+}
+
+.card-container {
+    margin: 10vh 0
+}
+
+.text-img-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5vh 5vw;
+}
+
+@media screen and (min-width: 1024px) {
+    .text-img-sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-img-sec>* {
+        max-width: 40%;
+    }
+
+    .text-img-sec img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.logo span {
+    padding-left: 10px
+}
+
+.fa {
+    font-size: 40px;
+    color: inherit
+}
+
+svg {
+    fill: white;
+    stroke: white
+}
+
+.top {
+    margin-bottom: 5vh;
+    padding: 0 0 25vh 1.5rem
+}
+
+.top svg {
+    bottom: 0
+}
+
+.bottom {
+    margin-top: 10vh;
+    padding: 20vh 5vw 0
+}
+
+.bottom svg {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: 0
+}
+
+.wavecontainer {
+    position: relative;
+    min-height: 50vh;
+    height: auto;
+}
+
+.wavecontainer svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: calc(100% + 1.3px);
+}
+
+.intro {
+    margin-top: 15vh
+}
+
+.main-title,
+.text {
+    max-height: 80vh;
+    max-width: 70vw
+}
+
+.main-title p {
+    margin-top: 1rem
+}
+
+.main-title>button {
+    margin-bottom: 3rem
+}
+
+@media screen and (min-width: 1024px) {
+    .main-title {
+        width: 45vw;
+        height: 50vh
+    }
+
+    .text {
+        width: 60vw;
+        height: 50vh
+    }
+}
+
+.image-div>img {
+    max-height: 80vh;
+    max-width: 70vw
+}
+
+@media screen and (min-width: 1060px) {
+    .image-div>img {
+        width: 40vw;
+        height: 50vh
+    }
+}
+
+main {
+    padding: 5vh 5vw
+}
+
+.top-nav {
+    padding: 1rem 0 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90vw
+}
+
+.top-nav nav {
+    width: 70%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.top-nav nav>* {
+    padding: 20px 0
+}
+
+.top-nav nav a {
+    display: block
+}
+
+@media screen and (min-width: 1024px) {
+    .top-nav nav {
+        width: 80%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .top-nav nav>* {
+        padding: 0
+    }
+}
+
+.top-nav a {
+    text-transform: uppercase
+}
+
+.top-nav button {
+    margin: inherit;
+    font-size: inherit;
+    padding: 0 15px;
+    text-transform: uppercase
+}
+
+@media screen and (min-width: 1024px) {
+
+    .top-nav .home,
+    .top-nav .back {
+        display: none
+    }
+}
+
+footer div {
+    min-width: 200px;
+    margin: 10vh auto
+}
+
+footer a {
+    display: block;
+    line-height: 2.5rem
+}
+
+footer p {
+    line-height: 2.5rem;
+    text-transform: uppercase
+}
+
+footer social>a {
+    border: 1px solid pink;
+    padding: 1rem
+}
+
+@-webkit-keyframes show {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes show {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
